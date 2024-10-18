@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Tables</title>
+    <link rel="stylesheet" href="tablesstyle.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Weather App</h2>
+            <a href="dashboard.html" class="menu-item">Dashboard</a>
+            <a href="tables.html" class="menu-item">Tables</a>
+        </div>
+
+        <!-- Main content area -->
+        <div class="main-content">
+            <!-- Top bar with search and user profile -->
+            <div class="top-bar">
+                <input type="text" placeholder="Search City..." class="search-bar">
+                <button class="get-weather-btn">Get Weather</button>
+                <div class="user-profile">U</div> <!-- Placeholder for user profile -->
+            </div>
+
+            <!-- Main section for table and chatbot -->
+            <div class="filter-area" style="display: flex;">
+                <select id="sortSelect">
+                    <option value="asc">Sort by Temperature (Ascending)</option>
+                    <option value="desc">Sort by Temperature (Descending)</option>
+                    <option value="rain">Filter Rainy Days</option>
+                    <option value="highest">Show Highest Temperature</option>
+                </select>
+                <button id="applyFilterBtn">Apply Filter</button>
+            </div>
+            <div class="main-section">
+                <!-- Table section -->
+                <!-- Inside the .main-section div -->
+                
+                
+<div class="table-area">
+    <h2>5-Day Temperature Forecast</h2>
+    <table id="forecastTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temperature (°C)</th>
+                <th>Conditions</th>
+            </tr>
+        </thead>
+        <tbody id="forecastBody">
+            <!-- Forecast entries will be populated here -->
+        </tbody>
+    </table>
+    <div class="pagination" id="pagination">
+        <!-- Pagination controls will be populated here -->
+    </div>
+</div>
+
+
+                <!-- Chatbot section -->
+                <div class="chatbot-section">
+                    <div class="chat-bar">
+                        <h3>Chat with the Bot</h3>
+                        <input type="text" placeholder="Type a message..." class="chat-input">
+                        <button class="send-btn">Send</button>
+                    </div>
+                    <div class="answer-area">
+                        <h3>Bot Responses</h3>
+                        <p>This is where chatbot responses will appear.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="tablescript.js"></script>
+</body>
+</html>

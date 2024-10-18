@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Dashboard</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Weather App</h2>
+            <a href="dashboard.html" class="menu-item">Dashboard</a>
+            <a href="tables.html" class="menu-item">Tables</a>
+        </div>
+        <div class="main-content">
+            <div class="top-bar">
+                <input type="text" placeholder="Search City..." class="search-bar">
+                <button id="getWeatherBtn" class="get-weather-btn">Get Weather</button>
+                <div class="user-profile">U</div> <!-- Placeholder for user profile -->
+            </div>
+            <div class="weather-data" id="weatherData">
+                <h2>Weather Data Based on City</h2>
+                <div id="currentWeather" class="current-weather"></div> <!-- For current weather data -->
+                <h3>5-Day Forecast</h3> <!-- Move the heading here -->
+                <div class="forecast" id="forecast">
+                    
+                    <div class="forecast-day">Day 1</div>
+                    <div class="forecast-day">Day 2</div>
+                    <div class="forecast-day">Day 3</div>
+                    <div class="forecast-day">Day 4</div>
+                    <div class="forecast-day">Day 5</div>
+                </div>
+                
+                
+            </div>
+            <div class="charts">
+                <div class="chart-container">
+                    <canvas id="vertical-bar" width="400" height="200"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="doughnut-chart" width="200" height="200"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="line-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
